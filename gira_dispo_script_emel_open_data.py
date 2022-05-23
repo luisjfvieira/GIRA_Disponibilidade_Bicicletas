@@ -47,7 +47,7 @@ df[['longitude', 'latitude', 'lon2', 'lat2']] = df['bbox'].str.split(', ', expan
 # Eliminar coluna position
 df = df.drop(columns=['lon2', 'lat2'])
 
-df.head()
+#df.head()
 
 
 # Exportar
