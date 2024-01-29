@@ -5,7 +5,7 @@
 name: Extract GIRA EMEL Open Data BSS availability data
 on:
     schedule:
-      - cron: "*/15 * * * *"
+      - cron: "*/5 * * * *"
  
 permissions:
   contents: write
