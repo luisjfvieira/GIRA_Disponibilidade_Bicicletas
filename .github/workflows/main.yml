@@ -2,7 +2,7 @@ name: Extract GIRA BSS availability data
 
 on:
     schedule:
-      - cron: "*/15 * * * *"
+      - cron: "*/5 * * * *"
       
 jobs:
     build:
