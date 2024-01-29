@@ -3,7 +3,7 @@
 ## EMEL OPEN DATA
 
 #### Manuel Banza - February, 2022
-
+#### Edited by Luis Vieira - January, 2024
 
 import requests
 from requests.structures import CaseInsensitiveDict
@@ -39,7 +39,7 @@ df['update_date'] = pd.to_datetime(df['update_date'], format='%Y-%m-%dT%H:%M:%S'
 df['update_date_hour'] = df['update_date'].dt.hour
 df['update_date_only'] = df['update_date'].dt.date
 
-# cirar latitude e longitude
+# criar latitude e longitude
 df['bbox'] = df['bbox'].astype(str).str.replace(']', '')
 df['bbox'] = df['bbox'].astype(str).str.replace('[', '')
 df[['longitude', 'latitude', 'lon2', 'lat2']] = df['bbox'].str.split(', ', expand=True)
